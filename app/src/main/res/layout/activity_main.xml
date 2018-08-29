@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="51dp"
+    android:background="@drawable/background"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:orientation="vertical"
+    tools:context="www.goeasy.suyash.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview"
+        tools:ignore="RtlHardcoded,RtlSymmetry,UselessParent"
+        android:fastScrollEnabled="true"
+        android:paddingBottom="51dp"
+        android:fillViewport="false"
+        android:fadingEdge="none"
+
+        android:scrollbarSize="0dp"
+        android:paddingRight="0dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarStyle="insideOverlay"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="8"
+        tools:ignore="ScrollViewSize">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="4"
+        tools:ignore="MissingPrefix">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/chrome"
+            android:id="@+id/chrome"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/mxplayer"
+            android:id="@+id/mxplayer"
+            android:scaleType="fitCenter"
+            tools:ignore="ContentDescription" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/whatsapp"
+            android:id="@+id/whatsapp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+         </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chrome"
+            android:paddingLeft="8dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/chrometv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mxplayer"
+            android:paddingLeft="18dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/MxPlayertv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whatsapp"
+            android:paddingLeft="1dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/whatsapptv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/calling"
+            android:id="@+id/calling"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/gmail"
+            android:id="@+id/gmail"
+
+
+            android:scaleType="fitCenter"
+
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/facebook"
+            android:id="@+id/facebook"
+
+
+            android:scaleType="fitCenter"
+
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dialpad"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/dialpadtv"
+
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gmail"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/gmailtv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:paddingRight="2dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/facebooktv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        tools:ignore="ExtraText">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/youcam"
+            android:id="@+id/youcam"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/instagram"
+            android:id="@+id/instagram"
+
+
+            android:scaleType="fitCenter"
+
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:background="@drawable/newshunt"
+           android:id="@+id/newshunt"
+
+
+            android:scaleType="fitCenter"
+
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="youcam"
+            android:paddingLeft="8dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/youcamtv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/instagramtv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DailyHunt"
+            android:paddingRight="2dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/Dailyhunttv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/amazon"
+            android:id="@+id/amazon"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam"
+            />
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/paytm"
+            android:id="@+id/paytm"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/youtube"
+            android:id="@+id/youtube"
+
+
+            android:scaleType="fitCenter"
+
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amazon"
+            android:paddingLeft="8dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/amazontv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paytm"
+            android:paddingRight="1dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/paytmtv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Youtube"
+            android:paddingRight="8dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:scaleType="fitCenter"
+            android:id="@+id/youtubetv"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginBottom="50dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/xender"
+                android:id="@+id/xender"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ucbrowser"
+                android:id="@+id/ucbrowser"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/twitter"
+                android:id="@+id/twitter"
+                tools:ignore="ContentDescription" />
+
+             />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xender"
+                android:paddingLeft="11dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:scaleType="fitCenter"
+                android:id="@+id/xendertv"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uc Browser"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:scaleType="fitCenter"
+                android:id="@+id/ucbrowsertv"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twitter"
+                android:paddingRight="15dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:scaleType="fitCenter"
+                android:id="@+id/twittertv"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.gms.ads.AdView android:id="@+id/adView"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
+
